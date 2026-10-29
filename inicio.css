@@ -1,0 +1,80 @@
+h1{text-align: center;
+animation: latido 2s infinite ease-in-out;}
+
+body{
+    background-image: url(fondo-internet.png);
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    color:rgb(58, 66, 82);
+    font-weight: 400;
+    font-style: italic;
+    padding:0 20px
+}
+
+.objetivos{ 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(150, 97, 19);
+    padding: 0 30px;
+
+    animation: aparecerEfecto 1s ease-nout forwads;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin: 20px 20px;
+}
+
+table tr {
+    transition:background-color 0.3s ease;
+}
+
+table tr:hover{
+    background-color:rgba(30,136,229,0..1);
+}
+
+table tr:hover th {
+    background-color: #e2e2e2; /* Un gris un poco más oscuro cuando pasas el mouse */
+}
+
+table tr:hover td {
+    background-color: rgba(30, 136, 229, 0.1); 
+}
+
+th,td{
+    border:1px solid #333333;
+    text-align:left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 6 20px;
+}
+th{
+    background-color: #f2f2f2;
+}
+
+h2{
+    padding:0 20px;
+}
+
+@keyframes apareccerEfecto{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
+@keyframes latido{
+    0%,100%{
+        tranform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+}
